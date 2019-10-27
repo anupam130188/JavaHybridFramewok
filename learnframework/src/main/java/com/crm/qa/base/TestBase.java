@@ -20,7 +20,7 @@ public class TestBase {
 		
 			try {
 				prop=new Properties();
-				FileInputStream fis = new FileInputStream("/Users/anchandan/JavaFMDev/learnframework/src/main/java/com/crm/qa/config/config.properties");
+				FileInputStream fis = new FileInputStream("C:/Users/anchandan/JavaFM/learnframework/src/main/java/com/crm/qa/config/config.properties");
 				prop.load(fis);
 			} catch (FileNotFoundException e) {
 				e.printStackTrace();
@@ -35,12 +35,12 @@ public class TestBase {
 		
 		if (browserName.equals("chrome"))
 		{
-			System.setProperty("webdriver.chrome.driver", "C:/Users/anchandan/JavaFMDev/learnframework/drivers/chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "C:/Users/anchandan/JavaFM/learnframework/drivers/chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 		else if (browserName.equals("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver", "C:/Users/anchandan/JavaFMDev/learnframework/drivers/geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver", "C:/Users/anchandan/JavaFM/learnframework/drivers/geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		

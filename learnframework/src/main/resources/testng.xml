@@ -2,6 +2,10 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="LearnFramework Free CRM">
 
+	<listeners>
+		<listener class-name="com.crm.qa.utils.RetryAnalyzer.class" />
+	</listeners>
+
 	<test name="Free CRM Dummy Scripts">
 		<classes>
 			<class name="com.crm.qa.testcases.LoginPageTest"></class>
